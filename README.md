@@ -73,7 +73,3 @@ http://localhost:3000
 
 ### Dashboard
 ![img](https://github.com/user-attachments/assets/9637b17b-136b-4dd6-bac4-870d1f5fd7d7)
-
----
-
-Feel free to customize the README file as per your project requirements!
