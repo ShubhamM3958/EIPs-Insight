@@ -23,11 +23,11 @@ export default function Home() {
                 ></Box>
                 <Box
                     position="absolute"
-                    top="-15%"
+                    top={{base:"-5%",md:"-10%",lg:"-15%"}}
                     left="50%"
                     transform="translateX(-50%)"
-                    width="800px"
-                    height="800px"
+                    width={{base:"400px", md:"500px",lg:"800px"}}
+                    height={{base:"400px", md:"500px",lg:"800px"}}
                     borderRadius="full"
                     bgGradient="radial(blue.200, transparent)"
                     opacity={0.7}
