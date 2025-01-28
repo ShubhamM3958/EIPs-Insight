@@ -20,8 +20,9 @@ const Home = () => {
             <Flex
                 align="center"
                 justify="space-between"
-                px="4"
+                px={{base:2,md:4}}
                 py="2"
+                gap={4}
                 w="full"
             >
                 <Breadcrumb fontWeight="medium" fontSize="sm" color="#00000073">

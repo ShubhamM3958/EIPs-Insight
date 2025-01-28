@@ -84,14 +84,15 @@ const HeroSection = () => {
                 justify="center"
             >
                 <Button
+                    as="a"
+                    href="/dashboard"
                     leftIcon={<FaPlus/>}
                     colorScheme="blue"
                     variant="solid"
                     px={6}
                     borderRadius="full"
                 >
-                    <a href="/dashboard">Dashboard</a>
-
+                    Dashboard
                 </Button>
                 <Button
                     leftIcon={<FaRegBookmark/>}

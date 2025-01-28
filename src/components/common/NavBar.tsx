@@ -73,7 +73,7 @@ const NavBar = () => {
                     flex={{base: 1, md: 0}}
                     justify={'flex-end'}
                     direction={'row'}
-                    spacing={4}>
+                    spacing={{base:1, md:4}}>
                     <IconButton aria-label="Github" variant="outline" colorScheme="blue" borderRadius="20" px={4}
                                 py={2}>
                         <FaGithub/>
@@ -188,7 +188,7 @@ const MobileNavItem = ({label, children, href}: NavItem) => {
     const {isOpen, onToggle} = useDisclosure()
 
     return (
-        <Stack spacing={4} onClick={children && onToggle}>
+        <Stack spacing={0} onClick={children && onToggle}>
             <Box
                 py={2}
                 as="a"
@@ -198,23 +198,25 @@ const MobileNavItem = ({label, children, href}: NavItem) => {
                 _hover={{
                     textDecoration: 'none',
                 }}>
-                <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
-                    {label}
-                </Text>
-                {children && (
-                    <Icon
-                        as={ChevronDownIcon}
-                        transition={'all .25s ease-in-out'}
-                        transform={isOpen ? 'rotate(180deg)' : ''}
-                        w={6}
-                        h={6}
-                    />
-                )}
+                <Stack direction="row">
+                    <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
+                        {label}
+                    </Text>
+                    {children && (
+                        <Icon
+                            as={ChevronDownIcon}
+                            transition={'all .25s ease-in-out'}
+                            transform={isOpen ? 'rotate(180deg)' : ''}
+                            w={6}
+                            h={6}
+                        />
+                    )}
+                </Stack>
+
             </Box>
 
             <Collapse in={isOpen} animateOpacity style={{marginTop: '0!important'}}>
                 <Stack
-                    mt={2}
                     pl={4}
                     borderLeft={1}
                     borderStyle={'solid'}
