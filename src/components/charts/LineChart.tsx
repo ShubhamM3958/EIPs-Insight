@@ -1,8 +1,8 @@
 import React from "react";
-import {Line} from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import {
     CategoryScale,
-    Chart as ChartJS,
+    Chart as ChartJS, ChartData, ChartOptions,
     Filler,
     Legend,
     LinearScale,
@@ -15,12 +15,13 @@ import {
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
 interface LineChartProps {
-    data: any;
-    options: any;
+    data: ChartData<'line'>;
+    options: ChartOptions<'line'>;
 }
 
-const LineChart: React.FC<LineChartProps> = ({data, options}) => {
-    return <Line data={data} options={options}/>;
+const LineChart: React.FC<LineChartProps> = ({ data, options }) => {
+    return <Line data={data} options={options} />;
 };
 
 export default LineChart;
+
