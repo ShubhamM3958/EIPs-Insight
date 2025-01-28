@@ -111,8 +111,8 @@ const HeroSection = () => {
                 width={{base: "90%", md: "80%"}}
                 mx="auto"
                 mt="50px"
-                borderRadius="40px"
-                borderWidth="7px"
+                borderRadius={{base:"20px",md:"40px"}}
+                borderWidth={{base:"5px", md:"7px"}}
                 borderColor="gray.200"
                 overflow="hidden"
             >

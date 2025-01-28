@@ -5,7 +5,7 @@ const About = () => {
         <Center>
             <Box as="section" py={12} px={6}>
                 <Stack direction={"column"} alignItems={"center"} gap={3}>
-                    <Heading as="h2" textAlign="center" size={{base: "lg", md: "xl", large: "2xl"}} fontWeight="normal">
+                    <Heading as="h2" textAlign="center" size={{base: "lg", md: "xl", large: "3xl"}} fontWeight="normal">
                         Introducing EIPsInsight: Your Ethereum Guide
                     </Heading>
                     <Text
@@ -27,12 +27,12 @@ const About = () => {
                     display="flex"
                     justifyContent="center"
                     alignItems="center"
-                    width="50%"
+                    width={{base: "90%", md: "50%"}}
                     mx="auto"
                     mt="50px"
-                    borderRadius="40px"
+                    borderRadius={{base:"20px",md:"40px"}}
                     overflow="hidden"
-                    borderWidth="2px"
+                    borderWidth={"2px"}
                     borderColor="gray.200"
                 >
                     <Image
