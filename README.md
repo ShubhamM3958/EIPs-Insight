@@ -1,4 +1,4 @@
-# Next.js Application
+# Eips Insight
 
 This is a Next.js application built to provide insights into Ethereum Improvement Proposals (EIPs), helping users stay updated and informed about the latest developments and proposals in the Ethereum ecosystem.
 
